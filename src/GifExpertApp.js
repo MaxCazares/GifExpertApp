@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import AddCategory from './components/AddCategory';
 import GifGrid from './components/GifGrid';
 
-const GiftExpertApp = () => {
+const GiftExpertApp = ({defaultCategories = []}) => {
 
-    const [categories, setCategories] = useState(['DBZ']);
+    const [categories, setCategories] = useState(defaultCategories);
 
     return (
         <React.StrictMode>

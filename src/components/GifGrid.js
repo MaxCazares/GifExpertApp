@@ -1,13 +1,12 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import useFetchGift from '../hooks/useFetchGifs';
+import useFetchGifs from '../hooks/useFetchGifs';
 import GifGridItem from './GifGridItem';
-import spinner from '../helper/spinner';
-
+import spinner from '../helpers/spinner';
 
 const GifGrid = ({ category }) => {
 
-    const {data:images, loading} = useFetchGift(category);    
+    const {data:images, loading} = useFetchGifs(category);    
 
     return (
         <Fragment>
